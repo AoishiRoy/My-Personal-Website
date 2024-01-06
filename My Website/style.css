@@ -1,0 +1,650 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* -------------------------navbar style start-------------------- */
+.nav_container {
+  width: 100%;
+  height: 110px;
+  background: #eeeef3;
+  box-shadow: 5px 5px 15px #c0c0c0;
+  position: sticky;
+  top: 0;
+  z-index: 8;
+}
+nav {
+  display: flex;
+  position: relative;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 90px;
+  position: absolute;
+}
+nav ul li {
+  list-style-type: none;
+  line-height: 110px;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  transition: all 0.4s;
+}
+.logo {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 30px;
+  top: 8px;
+  transition: all 0.4s;
+}
+nav ul li a:hover {
+  background: #dc143c;
+  border-radius: 10px;
+  color: #fff;
+}
+.logo:hover {
+  transform: scale(1.4);
+}
+#sidenav {
+  display: none;
+}
+/* ---------------------navbar style end------------------ */
+/* ---------------------header section start---------------- */
+#header {
+  width: 100%;
+  height: 110vh;
+  background: url(Aoishi_Header_Pic\ for\ nilesh.png),
+    url(bg_image\ for\ nilesh\ jpeg.jpg);
+  background-size: 800px 1100px, cover;
+  background-position: right, center;
+  background-repeat: no-repeat;
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 0, 100% 93%, 67% 100%, 0 85%, 0 0);
+
+  box-shadow: 5px 5px 15px #c0c0c0;
+}
+.header-info {
+  position: absolute;
+  font-size: 30px;
+  top: 250px;
+  left: 250px;
+}
+span {
+  color: red;
+}
+.header-info a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  background: red;
+  padding: 20px;
+  border-radius: 7px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.header-info p {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 35px;
+}
+/* .header-info a:hover {
+  background: crimson;
+} */
+
+.respons_div {
+  width: 100%;
+  height: 0vh;
+
+  background-position: center;
+  background-size: 640px 480px;
+  background-repeat: no-repeat;
+  position: relative;
+  display: none;
+}
+.respons_div img {
+  position: absolute;
+  top: -561px;
+}
+
+/* ---------------------header section end---------------- */
+/* ---------------------about section start--------------- */
+
+#about {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.section_title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.section_title h1 {
+  font-size: 50px;
+}
+.section_title p {
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
+}
+.about_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about_left_col {
+  flex-basis: 50%;
+  position: relative;
+}
+.about_left_col img {
+  width: 600px;
+  height: 750px;
+  padding: 50px;
+}
+.about_right_col {
+  flex-basis: 50%;
+  position: relative;
+}
+.about_right_col p {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.about_right_col ul li {
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+span {
+  color: red;
+}
+.imgOutline::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  outline: 3px solid red;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+}
+/* -----------------------about section end----------------- */
+/* -----------------services section start----------------- */
+
+#service_section {
+  width: 100%;
+  background-image: linear-gradient(
+    95.2deg,
+    rgba(173, 252, 234, 1) 26.8%,
+    rgba(192, 229, 246, 1) 64%
+  );
+}
+.service_container {
+  width: 100%;
+  height: auto;
+  padding: 0 8%;
+}
+#service_section .service_container .section_title {
+  padding-top: 100px;
+}
+
+.service_row {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 3fr));
+  grid-gap: 50px 40px;
+  padding-bottom: 100px;
+}
+.service {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  box-shadow: 5px 5px 5px red;
+}
+.service i {
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: red;
+}
+.service h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.service h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: red;
+}
+.service:hover {
+  background: red;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px black;
+}
+.service:hover i {
+  color: #fff;
+}
+.service:hover h4 {
+  color: #fff;
+}
+
+/* -----------------services section end----------------- */
+/* --------------------portfolio section start--------------- */
+
+#portfolio {
+  padding: 50px 0;
+  background-image: linear-gradient(to right, #d3cce3, #e9e4f0);
+  box-shadow: 5px 5px 15px #c0c0c0;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.work img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  display: block;
+  transition: transfrom 0.5s;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+  color: #fff;
+}
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a {
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  text-align: center;
+}
+.work:hover img {
+  transform: scale(1.1);
+}
+.work:hover .layer {
+  height: 100%;
+}
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  background: red;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+}
+.btn:hover {
+  background: #ff004f;
+}
+
+/* --------------------portfolio section end--------------- */
+/* ----------------------skill section style start----------------- */
+#skill_section {
+  background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+  box-shadow: 5px 5px 15px #c0c0c0;
+}
+.skills {
+  padding: 100px 50px;
+}
+
+.skills h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.skill_content {
+  display: flex;
+
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.left {
+  flex-basis: 50%;
+  text-align: justify;
+  padding-right: 50px;
+}
+.left h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.left p {
+  font-size: 35px;
+  margin: 5px 0;
+  margin-bottom: 50px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: bisque;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 15px 16px;
+  z-index: 1;
+}
+.dropdown-content a {
+  text-decoration: none;
+  font-size: 30px;
+  margin: 10px;
+  border-radius: 4px;
+}
+.dropdown span {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: red;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.right {
+  flex-basis: 50%;
+}
+.skill_container {
+  width: 100%;
+  background-color: gray;
+}
+.skillset {
+  text-align: right;
+  color: #fff;
+  padding-right: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.mysql {
+  width: 85%;
+  background-color: red;
+}
+p {
+  margin-bottom: 2px;
+  font-size: 22px;
+}
+.html {
+  width: 90%;
+  background-color: blue;
+}
+.css {
+  width: 80%;
+  background-color: chartreuse;
+}
+.javascript {
+  width: 70%;
+  background-color: darkorange;
+}
+.jquery {
+  width: 60%;
+  background-color: deeppink;
+}
+.react_js {
+  width: 30%;
+  background-color: green;
+}
+
+/* ----------------------skill section style end----------------- */
+/* -----------------------contact section style start---------------- */
+#contact {
+  background: linear-gradient(#ffdad5, #fff7f9);
+  overflow-x: hidden;
+}
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.contact-left-title {
+  font-weight: 600;
+  color: red;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.contact-inputs {
+  width: 600px;
+  height: 60px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 6px;
+}
+.contact-left textarea {
+  height: 200px;
+  padding-top: 15px;
+  border-radius: 10px;
+}
+.contact-inputs:focus {
+  border: 2px solid red;
+}
+.contact-inputs::placeholder {
+  color: #ff994f;
+}
+.contact-left button {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  background: red;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.cntactme {
+  font-size: 35px;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+i {
+  color: red;
+  font-size: 50px;
+}
+.social-section-title {
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.social-media-icon ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+.social-media-icon ul li {
+  list-style-type: none;
+}
+.social-media-icon i {
+  transition: 0.3s ease;
+}
+.social-media-icon i:hover {
+  transform: scale(1.4);
+}
+/* -----------------------contact section style end---------------- */
+
+/* ------------------------accordion style start------------------ */
+#accordion-section {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(156, 252, 248, 1) 11.2%,
+    rgba(110, 123, 251, 1) 91.1%
+  );
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow-y: hidden;
+  overflow-y: visible;
+}
+#accordion-section .section_title {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 43%;
+  padding-bottom: 50px;
+}
+#accordion {
+  margin: 200px auto;
+  width: 600px;
+}
+#accordion li {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+#accordion li label {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 35px;
+  font-weight: 500;
+  cursor: pointer;
+  color: red;
+}
+#accordion li label span {
+  transform: rotate(90deg);
+  font-size: 30px;
+  color: black;
+}
+#accordion label + input[type="radio"] {
+  display: none;
+}
+#accordion .accordion-content {
+  padding: 0 10px;
+  line-height: 36px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.accordion-content p {
+  font-size: 20px;
+}
+#accordion label + input[type="radio"]:checked + .accordion-content {
+  max-height: 400px;
+}
+
+/* ------------------------accordion style end------------------ */
+/* ---------------------qoute style start-------------------- */
+#qoute {
+  width: 100%;
+  height: 20vh;
+  background-image: linear-gradient(to right, #fffbd5, #b20a2c);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#qoute .qoute-div {
+  padding: 30px 300px;
+}
+#qoute .qoute-div p {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+#qoute .qoute-div h1 {
+  font-size: 40px;
+}
+/* ---------------------qoute style end-------------------- */
+/* ---------------------footer style start------------------------ */
+footer {
+  background: rgb(40, 38, 38);
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .footer-div {
+  
+} */
+.footer-div p {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.footer-div a {
+  color: #fff;
+  font-size: 25px;
+  padding: 0 10px;
+}
+/* ---------------------footer style end------------------------ */
